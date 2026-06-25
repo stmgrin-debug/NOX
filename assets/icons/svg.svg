@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="80" fill="#080808" />
+  <text x="256" y="280" font-family="Georgia, serif" font-size="180" font-weight="bold" fill="#e0e0e0" text-anchor="middle" letter-spacing="8">NOX</text>
+  <text x="256" y="370" font-family="Georgia, serif" font-size="48" fill="#b5b5b5" text-anchor="middle" letter-spacing="4">BIBLIOTECA</text>
+  <circle cx="256" cy="130" r="20" fill="none" stroke="#e0e0e0" stroke-width="3" />
+  <path d="M256 110 L256 150 M236 130 L276 130" stroke="#e0e0e0" stroke-width="3" />
+</svg>

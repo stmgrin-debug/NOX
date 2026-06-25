@@ -1,0 +1,34 @@
+{
+  "books": [
+    {
+      "id": "exemplo_metamorfose",
+      "titulo": "A Metamorfose",
+      "autor": "Franz Kafka"
+    },
+    {
+      "id": "exemplo_metamorfose",
+      "titulo": "A Metamorfose",
+      "autor": "Franz Kafka"
+    },
+    {
+      "id": "exemplo_metamorfose",
+      "titulo": "A Metamorfose",
+      "autor": "Franz Kafka"
+    },
+    {
+      "id": "exemplo_metamorfose",
+      "titulo": "A Metamorfose",
+      "autor": "Franz Kafka"
+    },
+    {
+      "id": "exemplo_metamorfose",
+      "titulo": "A Metamorfose",
+      "autor": "Franz Kafka"
+    },
+    {
+      "id": "exemplo_metamorfose",
+      "titulo": "A Metamorfose",
+      "autor": "Franz Kafka"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>NOX — Configurações</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192x192.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/settings.css" />
+</head>
+<body>
+    <div id="settingsApp" class="settings-app">
+        <header class="settings-header">
+            <button class="btn-back" id="btnBackSettings" aria-label="Voltar">←</button>
+            <h1>Configurações</h1>
+        </header>
+        <main class="settings-main">
+            <!-- Aparência -->
+            <section class="settings-group">
+                <h2>Aparência</h2>
+                <div class="setting-item">
+                    <label for="themeSelect">Tema</label>
+                    <select id="themeSelect">
+                        <option value="dark">Escuro (NOX)</option>
+                        <option value="light">Claro</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label for="fontSizeSelect">Tamanho da fonte</label>
+                    <select id="fontSizeSelect">
+                        <option value="small">Pequena</option>
+                        <option value="medium" selected>Média</option>
+                        <option value="large">Grande</option>
+                        <option value="xlarge">Extra Grande</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Acessibilidade -->
+            <section class="settings-group">
+                <h2>Acessibilidade</h2>
+                <div class="setting-item">
+                    <label for="colorBlindSelect">Modo Daltonismo</label>
+                    <select id="colorBlindSelect">
+                        <option value="none">Desativado</option>
+                        <option value="protanopia">Protanopia</option>
+                        <option value="deuteranopia">Deuteranopia</option>
+                        <option value="tritanopia">Tritanopia</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label for="highContrast">Alto contraste</label>
+                    <input type="checkbox" id="highContrast" />
+                </div>
+                <div class="setting-item">
+                    <label for="widerSpacing">Espaçamento ampliado</label>
+                    <input type="checkbox" id="widerSpacing" />
+                </div>
+                <div class="setting-item">
+                    <label for="easyReading">Leitura facilitada</label>
+                    <input type="checkbox" id="easyReading" />
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/settings.js"></script>
+    <script src="js/accessibility.js"></script>
+</body>
+</html>

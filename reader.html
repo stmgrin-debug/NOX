@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>NOX — Leitor</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192x192.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reader.css" />
+</head>
+<body>
+    <div id="readerApp" class="reader-app">
+        <header class="reader-header" role="banner">
+            <button class="btn-back" id="btnBack" aria-label="Voltar para biblioteca">←</button>
+            <span class="reader-title" id="readerTitle">Título do Livro</span>
+            <button class="btn-settings-quick" id="btnSettingsQuick" aria-label="Configurações rápidas">⚙</button>
+        </header>
+        <main class="reader-content" id="readerContent">
+            <!-- O texto é injetado aqui -->
+        </main>
+    </div>
+    <script src="js/books.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/reader.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+.settings-app {
+    background: var(--bg);
+    min-height: 100vh;
+    color: var(--text);
+}
+.settings-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.settings-header h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.settings-main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+.settings-group {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+.settings-group h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    color: var(--detail);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--surface2);
+}
+.setting-item:last-child { border-bottom: none; }
+.setting-item label {
+    font-size: 0.95rem;
+}
+.setting-item select, 
+.setting-item input[type="checkbox"] {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+}
+.setting-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--detail);
+}

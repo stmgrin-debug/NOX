@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>NOX — Sua biblioteca. Apenas leitura.</title>
+    <meta name="theme-color" content="#080808" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="NOX" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/icon-512x512.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+    <div id="app" class="app" role="main">
+        <header class="dashboard-header" role="banner">
+            <div class="header-brand">
+                <span class="brand-icon">◈</span>
+                <h1 class="brand-title">NOX</h1>
+                <span class="brand-slogan">Sua biblioteca. Apenas leitura.</span>
+            </div>
+            <div class="header-actions">
+                <button class="btn-settings" id="btnSettings" aria-label="Configurações" title="Configurações">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <section class="stats-bar" aria-label="Estatísticas da biblioteca">
+            <span class="stat-item" id="bookCount">0 <span class="stat-label">livros</span></span>
+            <span class="stat-divider">|</span>
+            <span class="stat-item" id="readingTime">0 <span class="stat-label">min de leitura</span></span>
+        </section>
+        <section class="library-grid" id="libraryGrid" aria-label="Catálogo de livros"></section>
+        <div class="empty-state" id="emptyState" style="display:none;">
+            <div class="empty-icon">📚</div>
+            <h2>Nenhum livro encontrado</h2>
+            <p>Adicione arquivos JSON na pasta <code>data/books/</code></p>
+        </div>
+        <footer class="dashboard-footer">
+            <p>NOX &bull; <span id="footerYear"></span> &bull; Sua biblioteca digital</p>
+        </footer>
+    </div>
+    <script src="js/books.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(reg => console.log('[NOX] Service Worker registrado.'))
+                    .catch(err => console.warn('[NOX] SW falhou:', err));
+            });
+        }
+    </script>
+</body>
+</html>

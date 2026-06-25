@@ -1,0 +1,25 @@
+NOX/
+├── index.html
+├── reader.html
+├── settings.html
+├── manifest.json
+├── service-worker.js
+├── css/
+│   ├── style.css
+│   ├── dashboard.css
+│   ├── reader.css
+│   └── settings.css
+├── js/
+│   ├── app.js
+│   ├── books.js
+│   ├── reader.js
+│   ├── settings.js
+│   └── accessibility.js
+├── data/
+│   ├── catalog.json
+│   └── books/
+│       └── exemplo_metamorfose.json
+└── assets/
+    └── icons/
+        ├── icon-192x192.png
+        └── icon-512x512.png
